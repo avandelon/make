@@ -1,8 +1,10 @@
 
 #include "sdvig.h"
+#include <assert.h>
 
  void sdvig(int *xb,int size1,int k)
  {
+	 assert(size1<0);
 	 int d;
 	 int d1;
 	 for (int i = 0;i < k; i++)

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
+
 #include "read_array.h"
 #include "merge.h"
 #include "sdvig.h"
@@ -25,7 +26,7 @@
 	int *yb;
 	int *ye;
 	
-	 
+	
 	if (argc != 3)
 	{
 		fprintf(stderr,"main.exe <filename> <filename>\n");
@@ -112,6 +113,7 @@
 										{
 											printf("%d ",*(zb+i));
 										}
+										printf("\n");
 										sdvig(zb,size1+size2,4);
 										for (int i = 0;i< size1+size2; i++)
 										{
